@@ -1,4 +1,4 @@
-module github.com/Haha6400/go-bookstore
+module github.com/Haha6400/11-golang-mini-projects/go-bookstore
 
 go 1.21.3
 require (
