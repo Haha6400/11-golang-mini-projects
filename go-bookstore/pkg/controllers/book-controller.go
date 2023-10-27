@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"strcov"
+	"strconv"
 
 	"github.com/Haha6400/11-golang-mini-projects/go-bookstore/pkg/models"
 	"github.com/Haha6400/11-golang-mini-projects/go-bookstore/pkg/utils"
@@ -24,7 +24,7 @@ func GetBook(w http.ResponseWriter, r *http.Request) {
 func GetBookById(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r) //mux.Vars(r) returns a map include variable from URL
 	bookId := vars["bookId"]
-	ID, err := strcov.ParseInt(bookId, 0, 0) //Transform bookId from string to int64
+	ID, err := strconv.ParseInt(bookId, 0, 0) //Transform bookId from string to int64
 	if err != nil {
 		fmt.Printf("error while parsing")
 	}

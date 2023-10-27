@@ -9,4 +9,5 @@ require (
 	github.com/Haha6400/11-golang-mini-projects/go-bookstore/pkg/controllers v0.0.0
 	github.com/Haha6400/11-golang-mini-projects/go-bookstore/pkg/models v0.0.0
 	github.com/Haha6400/11-golang-mini-projects/go-bookstore/pkg/utils v0.0.0
+	github.com/Haha6400/11-golang-mini-projects/go-bookstore/pkg/config v0.0.0
 )
