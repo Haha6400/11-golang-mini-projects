@@ -47,7 +47,7 @@ func CreateBook(w http.ResponseWriter, r *http.Request) {
 func DeleteBook(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r) //mux.Vars(r) returns a map include variable from URL
 	bookId := vars["bookId"]
-	ID, err := strcov.ParseInt(bookId, 0, 0) //Transform bookId from string to int64
+	ID, err := strconv.ParseInt(bookId, 0, 0) //Transform bookId from string to int64
 	if err != nil {
 		fmt.Printf("error while parsing")
 	}
@@ -63,7 +63,7 @@ func updateBook(w http.ResponseWriter, r *http.Request) {
 	utils.ParseBody(r, updateBook)
 	vars := mux.Vars(r) //mux.Vars(r) returns a map include variable from URL
 	bookId := vars["bookId"]
-	ID, err := strcov.ParseInt(bookId, 0, 0) //Transform bookId from string to int64
+	ID, err := strconv.ParseInt(bookId, 0, 0) //Transform bookId from string to int64
 	if err != nil {
 		fmt.Printf("error while parsing")
 	}
