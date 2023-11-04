@@ -1,1 +1,2 @@
-# 11-golang-mini-projects
+# 11 Golang mini projects
+Golang docs: https://ref.vn/uy6nvk
